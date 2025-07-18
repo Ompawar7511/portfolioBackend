@@ -8,6 +8,7 @@ app.use(cors({
     "https://portfolio-frontend-h9hc.onrender.com",
   methods:['GET','POST'],
   credentials:true
+}
   ));
 app.use(express.json());
 const emailId=process.env.EMAIL_USER;
