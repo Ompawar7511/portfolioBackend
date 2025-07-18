@@ -3,7 +3,12 @@ const cors = require("cors");
 require("dotenv").config();
 const nodemailer = require("nodemailer");
 const app = express();
-app.use(cors());
+app.use(cors({
+  origin:
+    "https://portfolio-frontend-h9hc.onrender.com",
+  methods:['GET','POST'],
+  credentials:true
+  ));
 app.use(express.json());
 const emailId=process.env.EMAIL_USER;
 const pass=process.env.EMAIL_PASS;
