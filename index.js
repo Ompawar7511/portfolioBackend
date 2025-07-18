@@ -5,7 +5,7 @@ const nodemailer = require("nodemailer");
 const app = express();
 app.use(cors({
   origin:
-    "https://portfolio-frontend-h9hc.onrender.com",
+    "https://portfolio-frontend-qn1j.onrender.com",
   methods:['GET','POST'],
   credentials:true
 }
